@@ -5,16 +5,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
 @Controller
-public class ConstructorInjectedController {
+public class SetterInjectedController {
 
-  private final GreetingService greetingService;
-
-  @Autowired
-  public ConstructorInjectedController(GreetingService greetingService) {
-    this.greetingService = greetingService;
-  }
+  private GreetingService greetingService;
 
   public String sayHello() {
     return greetingService.sayGreeting();
+  }
+
+  @Autowired
+  public void setGreetingService(GreetingService greetingService) {
+    this.greetingService = greetingService;
   }
 }
