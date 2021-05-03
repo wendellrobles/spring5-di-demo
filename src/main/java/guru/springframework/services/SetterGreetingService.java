@@ -3,7 +3,7 @@ package guru.springframework.services;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GetterGreetingService implements GreetingService {
+public class SetterGreetingService implements GreetingService {
 
   @Override
   public String sayGreeting() {
