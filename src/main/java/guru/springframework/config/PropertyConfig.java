@@ -22,16 +22,20 @@ public class PropertyConfig {
 
   @Bean
   public FakeDataSource fakeDataSource() {
+
     FakeDataSource fakeDataSource = new FakeDataSource();
     fakeDataSource.setUser(user);
     fakeDataSource.setPassword(password);
     fakeDataSource.setUrl(url);
+
     return fakeDataSource;
   }
 
   @Bean
   public static PropertySourcesPlaceholderConfigurer properties() {
+
     PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer = new PropertySourcesPlaceholderConfigurer();
+
     return propertySourcesPlaceholderConfigurer;
   }
 }
