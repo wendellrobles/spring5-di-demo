@@ -3,15 +3,15 @@
 name: John
 
 names: #Comment
-    - John
-    - Paul
-    - Ringo
+  - John
+  - Paul
+  - Ringo
 
 pound_sign: "#"
 
 book:
-    author: Joe Buck
-    publisher: random house
+  author: Joe Buck
+  publisher: random house
 
 truth: yes
 
@@ -23,7 +23,7 @@ false: no #No, false, FALSE
 
 string_val: "This is it's quote"
 
-colon_string: "my coureses: one two three"
+colon_string: "my courses: one two three"
 
 include_new_lines: |
   asdf asdf asdf
