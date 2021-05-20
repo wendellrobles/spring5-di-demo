@@ -9,37 +9,35 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
 
-/**
- * Created by jt on 6/7/17.
- */
 @Configuration
 @PropertySource("classpath:datasource.properties")
 public class PropertyConfig {
 
-    @Autowired
-    Environment env;
+  @Autowired
+  Environment env;
 
-    @Value("${guru.username}")
-    String user;
+  @Value("${guru.username}")
+  String user;
 
-    @Value("${guru.password}")
-    String password;
+  @Value("${guru.password}")
+  String password;
 
-    @Value("${guru.dburl}")
-    String url;
+  @Value("${guru.dburl}")
+  String url;
 
-    @Bean
-    public FakeDataSource fakeDataSource(){
-        FakeDataSource fakeDataSource = new FakeDataSource();
-        fakeDataSource.setUser(env.getProperty("USERNAME"));
-        fakeDataSource.setPassword(password);
-        fakeDataSource.setUrl(url);
-        return fakeDataSource;
-    }
+  @Bean
+  public FakeDataSource fakeDataSource() {
+    FakeDataSource fakeDataSource = new FakeDataSource();
+    //fakeDataSource.setUser(user);
+    fakeDataSource.setUser(env.getProperty("USERNAME"));
+    fakeDataSource.setPassword(password);
+    fakeDataSource.setUrl(url);
+    return fakeDataSource;
+  }
 
-    @Bean
-    public static PropertySourcesPlaceholderConfigurer properties(){
-        PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer =new PropertySourcesPlaceholderConfigurer();
-        return  propertySourcesPlaceholderConfigurer;
-    }
+  @Bean
+  public static PropertySourcesPlaceholderConfigurer properties() {
+    PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer = new PropertySourcesPlaceholderConfigurer();
+    return propertySourcesPlaceholderConfigurer;
+  }
 }
