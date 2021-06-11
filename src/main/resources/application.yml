@@ -6,7 +6,7 @@ guru:
 
 ---
 spring:
-    profiles: de
+  profiles: de
 guru:
   jms:
     username: JMS Username $$$$$$ German

@@ -10,16 +10,17 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 public class DiDemoApplication {
 
-	public static void main(String[] args) {
-		ApplicationContext ctx = SpringApplication.run(DiDemoApplication.class, args);
+  public static void main(String[] args) {
 
-		MyController controller = (MyController) ctx.getBean("myController");
+    ApplicationContext ctx = SpringApplication.run(DiDemoApplication.class, args);
 
-		FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
+    MyController controller = (MyController) ctx.getBean("myController");
 
-		System.out.println(fakeDataSource.getUser());
+    FakeDataSource fakeDataSource = (FakeDataSource) ctx.getBean(FakeDataSource.class);
 
-		FakeJmsBroker fakeJmsBroker = (FakeJmsBroker) ctx.getBean(FakeJmsBroker.class);
-		System.out.println(fakeJmsBroker.getUsername());
-	}
+    System.out.println(fakeDataSource.getUser());
+
+    FakeJmsBroker fakeJmsBroker = (FakeJmsBroker) ctx.getBean(FakeJmsBroker.class);
+    System.out.println(fakeJmsBroker.getUsername());
+  }
 }
