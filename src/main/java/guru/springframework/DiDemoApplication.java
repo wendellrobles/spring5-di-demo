@@ -8,6 +8,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+/**
+ * This example shows how to resolve injection dependencies by using @Primary annotation.
+ */
 @SpringBootApplication
 public class DiDemoApplication {
 
