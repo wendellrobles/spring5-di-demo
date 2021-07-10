@@ -8,6 +8,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+/**
+ * This example serves as an introduction to Spring profiles.
+ */
 @SpringBootApplication
 public class DiDemoApplication {
 

@@ -10,3 +10,4 @@ public class SetterGreetingService implements GreetingService {
     return "Hello - I was injected by the getter";
   }
 }
+
