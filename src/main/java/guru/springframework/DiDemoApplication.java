@@ -8,6 +8,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+/**
+ * This example shows how to set default profile in Spring.
+ */
 @SpringBootApplication
 public class DiDemoApplication {
 
