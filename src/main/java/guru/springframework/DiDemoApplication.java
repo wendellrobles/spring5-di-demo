@@ -9,6 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
+/**
+ * This is an example of component scanning.
+ */
 @SpringBootApplication
 @ComponentScan(basePackages = {"guru.services", "guru.springframework"})
 public class DiDemoApplication {
