@@ -8,6 +8,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+/**
+ * This is a demo of spring bean life cycle.
+ */
 @SpringBootApplication
 public class DiDemoApplication {
 
