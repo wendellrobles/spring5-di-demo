@@ -7,10 +7,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+/**
+ * This is an example of using multiple properties files using PropertySources annotation.
+ */
 @SpringBootApplication
 public class DiDemoApplication {
 
   public static void main(String[] args) {
+
     ApplicationContext ctx = SpringApplication.run(DiDemoApplication.class, args);
 
     MyController controller = (MyController) ctx.getBean("myController");
@@ -20,6 +24,7 @@ public class DiDemoApplication {
     System.out.println(fakeDataSource.getUser());
 
     FakeJmsBroker fakeJmsBroker = (FakeJmsBroker) ctx.getBean(FakeJmsBroker.class);
+
     System.out.println(fakeJmsBroker.getUsername());
   }
 }
