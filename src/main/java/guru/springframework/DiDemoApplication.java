@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 /**
- * This is an introduction to yaml.
+ * This is an example of using application.yaml.
  */
 @SpringBootApplication
 public class DiDemoApplication {
