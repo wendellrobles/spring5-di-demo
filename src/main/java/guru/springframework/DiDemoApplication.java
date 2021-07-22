@@ -6,6 +6,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
+/**
+ * This is an example of using properties file by using PropertySourcesPlaceholderConfigurer.
+ */
 @SpringBootApplication
 public class DiDemoApplication {
 
